@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="GymStyle.css">
+<style>
+    body {
+        font-family: 'Hubballi';
+        margin: 0px;
+        padding: 0px;
+        background: url(https://getwallpapers.com/wallpaper/full/e/b/d/188199.jpg);
+        color: bisque;
+        min-height: 2000px;
+    }
+
+    .left {
+        display: inline-block;
+        width: fit-content;
+        margin: auto;
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .left img {
+        width: 80px;
+        display: inline-block;
+        margin-left: 0px;
+        filter: invert(100%);
+    }
+
+    .mid {
+        display: block;
+        /* to position: the content: in centre */
+        width: 530px;
+        margin: 20px auto;
+        border: 2px solid blanchedalmond;
+        border-radius: 10px;
+        position: sticky;
+        top: 0;
+    }
+
+    ul {
+        padding: 0px 0px;
+        /* by default ul left padding is 40px */
+        text-align: center;
+        margin: 1px 1px;
+        height: 48px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 0px 3px;
+        list-style: none;
+        border-radius: 6px;
+        padding: 9px 11px;
+        font-weight: bolder;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: bisque;
+        font-size: 124%;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        margin: 0px 1px;
+        list-style: none;
+        border-radius: 6px;
+        padding: 7px 0px;
+        background-color: bisque;
+        text-decoration: none;
+        color: indianred;
+        font-size: 110%;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border-radius: 19px;
+    }
+
+    .btn {
+        display: inline-block;
+        font-family: 'Hubballi', cursive;
+        /*  cant inherit from body default font is ariel */
+        margin: 1px 3px;
+        list-style: none;
+        border-radius: 18px;
+        padding: 2px 12px;
+        text-decoration: underline;
+        text-decoration-color: bisque;
+        color: bisque;
+        background-color: indianred;
+        font-size: 115%;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        margin: 0px 1px;
+        text-decoration: underline;
+        list-style: none;
+        border-radius: 18px;
+        padding: 2px 12px;
+        background-color: bisque;
+        text-decoration: none;
+        color: indianred;
+        font-size: 110%;
+    }
+
+    .container {
+        border: 2px solid blanchedalmond;
+        margin: 100px 153px;
+        margin-right: 573px;
+        padding: 9px 112px;
+        height: 435px;
+        border-radius: 8px;
+    }
+    form{
+        margin: 5px;
+        padding: 4px;
+    }
+
+    .form-group input {
+        font-family: 'Hubballi';
+        font-size: 26px;
+        margin: 13px;
+        /*used display: block; and width therefore eligible to centre element using auto */
+        padding: 6px;
+        display: block;
+        width: fit-content;
+        border: 2px solid cornflowerblue;
+        border-radius: 15px;
+    }
+    .container button{
+        height: 44px;
+        font-size: 26px;
+        width: 311px;
+        margin: 19px 8px;
+        padding: 6px;
+        display: block;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="https://i.pinimg.com/564x/b4/2b/4c/b42b4c818c7f2a60793216c51460e8df.jpg" alt="">
+            <div>Uttki Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://www.youtube.com/watch?v=pbMwTqkKSps">Fitness Calculator</a></li>
+                <li><a href="https://www.youtube.com/watch?v=pbMwTqkKSps">About Us</a></li>
+                <li><a href="https://www.youtube.com/watch?v=pbMwTqkKSps">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Ranchi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
